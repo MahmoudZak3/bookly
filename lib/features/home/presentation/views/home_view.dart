@@ -6,8 +6,11 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: HomeViewBody(),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 50.0),
+      child: Scaffold(
+        body: HomeViewBody(),
+      ),
     );
   }
 }
