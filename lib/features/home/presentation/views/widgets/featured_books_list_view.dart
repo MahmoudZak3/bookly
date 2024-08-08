@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:bookly/core/wigets/custom_error_widget.dart';
 import 'package:bookly/core/wigets/custom_loading_indicator.dart';
 import 'package:bookly/features/home/presentation/manger/featured_books_cubit/featured_books_cubit.dart';
