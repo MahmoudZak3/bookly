@@ -24,13 +24,14 @@ class SimilerBooksListView extends StatelessWidget {
               }),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemCount: 10,
+                itemCount: state.books.length,
                 itemBuilder: (context, index) {
-                  return const Padding(
+                  return Padding(
                     padding: EdgeInsets.symmetric(horizontal: 5.0),
                     child: CustomBookImage(
                       imageUrl:
-                          'https://pbs.twimg.com/media/GUSncPJXcAAW6xf?format=jpg&name=small',
+                          state.books[index].volumeInfo.imageLinks?.thumbnail ??
+                              '',
                     ),
                   );
                 },
